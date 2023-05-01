@@ -91,6 +91,6 @@ function checkAnswer(currentLevel){
         gamePattern = [];
         userClickedPattern = [];
         level = 0;
-        $("h1").text("Game Over, Press a key or screen to start over");
+        $("h1").text("Game Over, Press a key to start over");
     }
 }
