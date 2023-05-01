@@ -59,8 +59,12 @@ $(".btn").click(function(e){
 
 var ears = document.addEventListener("keypress", function(e){
     nextSequence(4);
+    $("h1").text("Level: " + level);  
+})
+
+const ears = document.addEventListener("touchstart", function(e){
+    nextSequence(4);
     $("h1").text("Level: " + level);
-    
 })
 
 
@@ -87,6 +91,6 @@ function checkAnswer(currentLevel){
         gamePattern = [];
         userClickedPattern = [];
         level = 0;
-        $("h1").text("Game Over, Press Any Key To Start Over");
+        $("h1").text("Game Over, Press a key or screen to start over");
     }
 }
