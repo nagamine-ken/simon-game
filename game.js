@@ -57,12 +57,12 @@ $(".btn").click(function(e){
 
 
 
-var ears = document.addEventListener("keypress", function(e){
+const ears = document.addEventListener("keypress", function(e){
     nextSequence(4);
     $("h1").text("Level: " + level);  
 })
 
-const ears = document.addEventListener("touchstart", function(e){
+const mobileEars = document.addEventListener("touchstart", function(e){
     nextSequence(4);
     $("h1").text("Level: " + level);
 })
